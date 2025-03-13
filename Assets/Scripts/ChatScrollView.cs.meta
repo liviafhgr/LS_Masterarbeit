@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b0c8c0bcf4fe4436c8f4555951dc0432
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - sprachnachrichtPrefab: {fileID: 4873082759956991908, guid: 5e262f32339b345c3aab8a42e7cf781d, type: 3}
+  - textnachrichtPrefab: {fileID: 7754491361632251753, guid: a78b77e73fde64269bac88386ea7a44c, type: 3}
+  - bildnachrichtPrefab: {fileID: 6107425640248455573, guid: f5ba18ef2395542389c02ac1f2b8a417, type: 3}
+  - contentTransform: {instanceID: 0}
+  - scrollRect: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

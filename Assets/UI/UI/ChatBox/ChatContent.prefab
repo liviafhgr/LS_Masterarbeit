@@ -1533,6 +1533,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5305354713659439166, guid: 0b3cf764b6b1448c7bf4c5a83369191c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305354713659439166, guid: 0b3cf764b6b1448c7bf4c5a83369191c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305354713659439166, guid: 0b3cf764b6b1448c7bf4c5a83369191c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305354713659439166, guid: 0b3cf764b6b1448c7bf4c5a83369191c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6599456075500905384, guid: 0b3cf764b6b1448c7bf4c5a83369191c, type: 3}
       propertyPath: m_Name
       value: 1_Audiomessage

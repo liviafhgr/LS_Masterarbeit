@@ -15,6 +15,7 @@ public class AudioMessage : MonoBehaviour
     public Dictionary<string, AudioSource> audioSources = new Dictionary<string, AudioSource>();
     private Dictionary<string, Coroutine> audioCoroutineTracker = new Dictionary<string, Coroutine>();
     // Start is called before the first frame update
+    //Ich hole alle Buttons und Audio Clips in das Skript rein.
     void Start()
     {
         buttonDictionary = GetAllPlayButtons();
@@ -47,6 +48,11 @@ public class AudioMessage : MonoBehaviour
         audioCoroutineTracker.Remove(audio.gameObject.name);
     }
 
+//Logik:
+//gleiches Prinzip wie bei VideoMessage
+//Ich hole das passende Audio Clips in das Skript rein. -> In Unity definiert. Darum auch ItalianAudio und DialectAudio in History.
+//Ich hole alle Buttons in das Skript rein.
+//Ich hole das passende Button (Sufix/Prefix) in das Skript rein.
     private void TogglePausePlayButtons(string buttonPrefix)
     {
         var playButton = buttonDictionary[buttonPrefix + "Play"];
@@ -66,7 +72,9 @@ public class AudioMessage : MonoBehaviour
             audio.Pause();
         }
     }
-
+//Gleichh wie bei VideoMessage aber zwei Audio Clips.
+//Ich hole alle Audio Clips in das Skript rein.
+//Ich hole alle Audio Clips in das Skript rein (true= auch die inaktiven)
     private Dictionary<string, AudioSource> GetAllAudioClips()
     {
         Dictionary<string, AudioSource> audioSources = new Dictionary<string, AudioSource>();
@@ -76,6 +84,18 @@ public class AudioMessage : MonoBehaviour
         }
         return audioSources;
     }
+//Ich hole alle Childobjekte vom Typ Buttons (Play und Pause) in das Skript rein.
+//Ich lese pro Button einen Namen des Dictionaryeintrags.
+//Sufix:Alle Buttons sind mit Play oder Pause benannt.
+//Präfix: Alle Buttons sind mit Italian oder Dialect bennant.
+//Prefix + Suffix: Name des Buttons
+//AI: Regex.Replace (Claude) entfernt die Endung Play oder Pause (Sufix).
+//Das OnClick Event wird mit der Funktion TogglePausePlayButtons verknüpft.
+//Das OnClick Event wird mit dem Namen des Buttons verknüpft.
+//Hole meinen Bruderbutton ItalianPlay und ItalianPause.
+//Setze mich selbst inaktiv (ItlianPlay)
+//Setze meinen Bruder aktiv (ItalienPause)
+//Spiele oder pausiere den Audio Clip (je nach Event)
 
     private Dictionary<string, Button> GetAllPlayButtons()
     {

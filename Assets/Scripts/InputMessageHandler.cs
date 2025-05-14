@@ -26,7 +26,7 @@ public class InputMessageHandler : MonoBehaviour
         Debug.Log("SaveAndDisplayInput wurde aufgerufen.");
 
         // Hole den Text aus der playerInput-Variable des ChatInputHandler-Skripts
-        string playerInput = chatInputHandler.playerInput;
+        string playerInput = "    " + chatInputHandler.playerInput; // Füge 4 Leerzeichen am Anfang hinzu
         Debug.Log($"Player Input: {playerInput}");
 
         // Überprüfe, ob das Prefab und das Ziel korrekt zugewiesen sind
@@ -52,6 +52,26 @@ public class InputMessageHandler : MonoBehaviour
         {
             prefabText.text = playerInput;
             Debug.Log($"Text im geklonten Prefab gesetzt: {playerInput}");
+
+            // Setze die Breite des Elternobjekts "Eingabenachricht" basierend auf der Textlänge
+            RectTransform parentRectTransform = prefabText.transform.parent.GetComponent<RectTransform>();
+            if (parentRectTransform != null)
+            {
+                // Hole die bevorzugte Breite des Textes
+                float preferredWidth = prefabText.preferredWidth;
+
+                // Füge 10 Pixel (5 mm auf jeder Seite) zur Breite hinzu
+                float adjustedWidth = preferredWidth + 10;
+
+                // Setze die Breite des Elternobjekts (z. B. "Eingabenachricht")
+                parentRectTransform.sizeDelta = new Vector2(adjustedWidth, parentRectTransform.sizeDelta.y);
+
+                Debug.Log($"Breite von 'Eingabenachricht' angepasst: {adjustedWidth}");
+            }
+            else
+            {
+                Debug.LogError("Kein RectTransform für das Elternobjekt gefunden!");
+            }
         }
         else
         {

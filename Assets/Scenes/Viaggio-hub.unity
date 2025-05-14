@@ -3879,6 +3879,24 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5582395370997813987, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_text
+      value: "\r\nvviate l\u2019esperienza AR \U0001F4F1. Toccate le persone \U0001F446
+        per sentire le loro storie. \U0001F442\U0001F575\uFE0F\u200D\u2640\uFE0F
+        Ho delle "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582395370997813987, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_StyleSheet
+      value: 
+      objectReference: {fileID: 11400000, guid: f952c082cb03451daed3ee968ac6c63e, type: 2}
+    - target: {fileID: 5582395370997813987, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582395370997813987, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5816501324416273594, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3958,6 +3976,10 @@ PrefabInstance:
     - target: {fileID: 8631967144696114302, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9112461453109461838, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_text
+      value: eingabe text
       objectReference: {fileID: 0}
     - target: {fileID: 9112461453109461838, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_fontStyle

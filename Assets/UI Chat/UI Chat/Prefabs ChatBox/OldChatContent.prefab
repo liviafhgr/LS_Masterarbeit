@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 4095183505835540286}
   - component: {fileID: 4744626081184257755}
   m_Layer: 5
-  m_Name: ChatContent
+  m_Name: OldChatContent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

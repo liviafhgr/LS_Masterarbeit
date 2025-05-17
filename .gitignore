@@ -71,3 +71,28 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/TextMesh Pro/Fonts/Apple Color Emoji SDF.asset
+Assets/TextMesh Pro/Fonts/Apple Color Emoji SDF.asset.meta
+Assets/TextMesh Pro/Fonts/Apple Color Emoji.ttc
+Assets/TextMesh Pro/Fonts/Apple Color Emoji.ttc.meta
+Assets/TextMesh Pro/Fonts/go alex.meta
+Assets/TextMesh Pro/Fonts/go alex/1AppleColorEmoji SDF.asset
+Assets/TextMesh Pro/Fonts/go alex/1AppleColorEmoji SDF.asset.meta
+Assets/TextMesh Pro/Fonts/go alex/1AppleColorEmoji.asset.meta
+Assets/TextMesh Pro/Fonts/go alex/AppleColorEmoji.eot
+Assets/TextMesh Pro/Fonts/go alex/AppleColorEmoji.eot.meta
+Assets/TextMesh Pro/Fonts/go alex/AppleColorEmoji.svg
+Assets/TextMesh Pro/Fonts/go alex/AppleColorEmoji.svg.meta
+Assets/TextMesh Pro/Fonts/go alex/AppleColorEmoji.ttf
+Assets/UI Chat/Prefabs UI Chat/Einführungsszene Prefabs.meta
+Assets/TextMesh Pro/Fonts/NotoColorEmoji SDF.asset
+Assets/TextMesh Pro/Fonts/NotoColorEmoji SDF.asset.meta
+Assets/TextMesh Pro/Fonts/NotoColorEmoji.ttf
+Assets/TextMesh Pro/Fonts/NotoColorEmoji.ttf.meta
+Assets/TextMesh Pro/Fonts/NotoColorEmoji_WindowsCompatible SDF.asset
+Assets/TextMesh Pro/Fonts/NotoColorEmoji_WindowsCompatible SDF.asset.meta
+*.ttf
+Assets/TextMesh Pro/Fonts/NotoColorEmoji_WindowsCompatible.ttf.meta
+Assets/TextMesh Pro/Fonts/go alex/AppleColorEmoji.ttf.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/Lato-Regular SDF.asset
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset

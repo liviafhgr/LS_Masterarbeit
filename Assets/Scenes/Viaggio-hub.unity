@@ -1705,7 +1705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &991563361
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1839,6 +1839,18 @@ MonoBehaviour:
   - {fileID: 2455730617609359237, guid: e9b708fa079644380ab40c5ec52f3a45, type: 3}
   - {fileID: 7185833788781525819, guid: 627ce751148704676b450a0c93a929ef, type: 3}
   - {fileID: 3269973605586696908, guid: 55d5d24b3497349a2ba27a7681479579, type: 3}
+  - {fileID: 16509955908307726, guid: 1335ecec62f8746739290d8747321f00, type: 3}
+  - {fileID: 1174694264424902768, guid: a21bb303bf1f04ae4afdb9a7334fe778, type: 3}
+  - {fileID: 8751581616563383872, guid: fb8c6ade4e09143a0a92b47625edd59d, type: 3}
+  - {fileID: 6070158738861148898, guid: 599f4b2532ceb4c75a7f7d52da8ede81, type: 3}
+  - {fileID: 2675495834075165707, guid: ded06fbf4c9934b15be2555bc63fe5aa, type: 3}
+  - {fileID: 2099469345772472355, guid: 69f0e568341554ace8a14b339858b4f0, type: 3}
+  - {fileID: 6043346963175705174, guid: 903546c0867f2458b93cc4b90b2688fb, type: 3}
+  - {fileID: 4840397595981948953, guid: e55007e11436c4b398fd38332ec07a4d, type: 3}
+  - {fileID: 8392949554829290101, guid: 4a1a9d10e29194065a599c10e0a7f73c, type: 3}
+  - {fileID: 7540673331784280400, guid: fe018b7e4840e468fad47938669505a5, type: 3}
+  - {fileID: 8249486030611239991, guid: 1035ae755a7aa4e559ce60b58d343d38, type: 3}
+  - {fileID: 8273421568743292136, guid: 77f229f839ff246498f193c90b717d0c, type: 3}
   "receiveContentEinf\xFChrungsszene": {fileID: 1246321383}
 --- !u!1 &1011264097
 GameObject:
@@ -4145,7 +4157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2171969374872202489, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2374601134106873385, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_AnchorMax.y

@@ -383,6 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chatInputHandler: {fileID: 8777132195235079367}
   prefab2122: {fileID: 6286908127016340703, guid: 7f02c450d3db04657b7e5924a0d0f3f7, type: 3}
+  prefab2131: {fileID: 2430243542450519463, guid: 4820fdcbe53574b60ace2279a0bd08d7, type: 3}
   "receiveContentEinf\xFChrungsszene": {fileID: 1246321383}
 --- !u!4 &151037955 stripped
 Transform:

@@ -7,6 +7,7 @@ public class InputRaetsel1Skript : MonoBehaviour
     [SerializeField] private ChatInputHandler chatInputHandler; // Referenz auf das ChatInputHandler-Skript
     [SerializeField] private GameObject prefab2122; // Prefab 2.12.2
     [SerializeField] private GameObject prefab2131; // Prefab 2.13.1
+    [SerializeField] private GameObject prefab2133; // Prefab 2.13.3
     [SerializeField] private Transform receiveContentEinführungsszene; // Ziel-Container
 
     private string gespeicherterPlayerInput = "";
@@ -166,6 +167,8 @@ public class InputRaetsel1Skript : MonoBehaviour
                 gespeicherterPlayerInput = cleanedInput;
                 Debug.Log("Player Input gespeichert: '" + gespeicherterPlayerInput + "'");
 
+                bool found = false;
+
                 // Prüfung für prefab2122
                 foreach (var antwort in erlaubteAntworten)
                 {
@@ -180,26 +183,39 @@ public class InputRaetsel1Skript : MonoBehaviour
                         Debug.Log("Gültige Antwort erkannt, Prefab 2.12.2 wird instanziiert!");
                         if (prefab2122 != null && receiveContentEinführungsszene != null)
                             Instantiate(prefab2122, receiveContentEinführungsszene);
+                        found = true;
                         break;
                     }
                 }
 
-                // Prüfung für prefab2131 (GENAU GLEICHER CODE, andere Liste)
-                foreach (var antwort in erlaubteAntworten2131)
+                // Prüfung für prefab2131
+                if (!found)
                 {
-                    string cleanedAntwort = antwort.Trim()
-                        .Replace("’", "'")
-                        .Replace("`", "'")
-                        .Replace("´", "'")
-                        .Trim('\u00A0', '\u2000', '\u2001', '\u2002', '\u2003', '\u2004', '\u2005', '\u2006', '\u2007', '\u2008', '\u2009', '\u200A', '\u202F', '\u205F', '\u3000');
-
-                    if (string.Equals(cleanedInput, cleanedAntwort, System.StringComparison.OrdinalIgnoreCase))
+                    foreach (var antwort in erlaubteAntworten2131)
                     {
-                        Debug.Log("Gültige Antwort erkannt, Prefab 2.13.1 wird instanziiert!");
-                        if (prefab2131 != null && receiveContentEinführungsszene != null)
-                            Instantiate(prefab2131, receiveContentEinführungsszene);
-                        break;
+                        string cleanedAntwort = antwort.Trim()
+                            .Replace("’", "'")
+                            .Replace("`", "'")
+                            .Replace("´", "'")
+                            .Trim('\u00A0', '\u2000', '\u2001', '\u2002', '\u2003', '\u2004', '\u2005', '\u2006', '\u2007', '\u2008', '\u2009', '\u200A', '\u202F', '\u205F', '\u3000');
+
+                        if (string.Equals(cleanedInput, cleanedAntwort, System.StringComparison.OrdinalIgnoreCase))
+                        {
+                            Debug.Log("Gültige Antwort erkannt, Prefab 2.13.1 wird instanziiert!");
+                            if (prefab2131 != null && receiveContentEinführungsszene != null)
+                                Instantiate(prefab2131, receiveContentEinführungsszene);
+                            found = true;
+                            break;
+                        }
                     }
+                }
+
+                // Prüfung für prefab2133 (alle anderen Eingaben, außer leer)
+                if (!found && !string.IsNullOrEmpty(cleanedInput))
+                {
+                    Debug.Log("Ungültige Antwort, Prefab 2.13.3 wird instanziiert!");
+                    if (prefab2133 != null && receiveContentEinführungsszene != null)
+                        Instantiate(prefab2133, receiveContentEinführungsszene);
                 }
             }
         }

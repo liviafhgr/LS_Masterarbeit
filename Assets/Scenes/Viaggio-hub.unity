@@ -333,6 +333,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1643018857}
   m_LocalEulerAnglesHint: {x: 449.49402, y: 90, z: -90}
+--- !u!1 &92623655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 92623656}
+  - component: {fileID: 92623657}
+  m_Layer: 5
+  m_Name: InputRaetsel1Skript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &92623656
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92623655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3808873123634208991}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &92623657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92623655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f9866560225e44ef90b4dc1be5631b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chatInputHandler: {fileID: 8777132195235079367}
+  prefab2122: {fileID: 6286908127016340703, guid: 7f02c450d3db04657b7e5924a0d0f3f7, type: 3}
+  "receiveContentEinf\xFChrungsszene": {fileID: 1246321383}
 --- !u!4 &151037955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852755109115453855, guid: fa7c69a1758e74fe8b1d34975a861679, type: 3}
@@ -1852,6 +1903,15 @@ MonoBehaviour:
   - {fileID: 8249486030611239991, guid: 1035ae755a7aa4e559ce60b58d343d38, type: 3}
   - {fileID: 8273421568743292136, guid: 77f229f839ff246498f193c90b717d0c, type: 3}
   "receiveContentEinf\xFChrungsszene": {fileID: 1246321383}
+  inputRaetsel1: {fileID: 92623657}
+  sendButton: {fileID: 1170644566}
+  enterText: {fileID: 996384877}
+  pressedColor: {r: 0.7, g: 0.7, b: 1, a: 1}
+--- !u!1 &996384877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5830088197399027392, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+  m_PrefabInstance: {fileID: 3808873123634208990}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1011264097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,6 +2341,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4467518345670898048, guid: caf7bbe3c47724523a5a8a52a9029825, type: 3}
   m_PrefabInstance: {fileID: 1571940837}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1170644566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2171969374872202489, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+  m_PrefabInstance: {fileID: 3808873123634208990}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1224358956 stripped
 Transform:
@@ -4024,7 +4089,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
   m_PrefabInstance: {fileID: 3808873123634208990}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1170644566}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -4541,6 +4606,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6782318205184908769, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 991563361}
+    - targetCorrespondingSourceObject: {fileID: 6782318205184908769, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 92623656}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9105925888282385454, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       insertIndex: -1

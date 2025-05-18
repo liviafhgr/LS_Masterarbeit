@@ -9,6 +9,7 @@ public class InputRaetsel1Skript : MonoBehaviour
     [SerializeField] private GameObject prefab2131; // Prefab 2.13.1
     [SerializeField] private GameObject prefab2133; // Prefab 2.13.3
     [SerializeField] private GameObject prefab2134; // Prefab 2.13.4
+    [SerializeField] private GameObject prefab2135; // Prefab 2.13.5
     [SerializeField] private Transform receiveContentEinführungsszene; // Ziel-Container
 
     private string gespeicherterPlayerInput = "";
@@ -149,9 +150,9 @@ public class InputRaetsel1Skript : MonoBehaviour
         "Festa della Castagna Special - Fuoco d'Autunno"
     };
 
-    private int count2132 = 0; // Zähler für Prefab 2.13.2 (entspricht 2.13.1 in deinem Code)
+    private int count2122 = 0; // Zähler für Prefab 2.12.2
     private int count2133 = 0; // Zähler für Prefab 2.13.3
-    private int letzterSchwellenwert = 1; // Startwert 1, damit bei 2 das erste Mal ausgelöst wird
+    private int letzterSchwellenwert = 1;
 
     void Update()
     {
@@ -183,6 +184,7 @@ public class InputRaetsel1Skript : MonoBehaviour
                         if (prefab2122 != null && receiveContentEinführungsszene != null)
                         {
                             Instantiate(prefab2122, receiveContentEinführungsszene);
+                            count2122++; // Zähler erhöhen!
                         }
                         found = true;
                         break;
@@ -205,7 +207,6 @@ public class InputRaetsel1Skript : MonoBehaviour
                             if (prefab2131 != null && receiveContentEinführungsszene != null)
                             {
                                 Instantiate(prefab2131, receiveContentEinführungsszene);
-                                count2132++;
                             }
                             found = true;
                             break;
@@ -219,15 +220,21 @@ public class InputRaetsel1Skript : MonoBehaviour
                     if (prefab2133 != null && receiveContentEinführungsszene != null)
                     {
                         Instantiate(prefab2133, receiveContentEinführungsszene);
-                        count2133++;
+                        count2133++; // Zähler erhöhen!
                     }
                 }
 
                 // Prüfung für prefab2134: bei Summe 2, 3 oder 4
-                int summe = count2132 + count2133;
+                int summe = count2122 + count2133;
                 if (summe > letzterSchwellenwert && summe >= 2 && summe <= 4 && prefab2134 != null)
                 {
                     Instantiate(prefab2134, receiveContentEinführungsszene);
+                    letzterSchwellenwert = summe;
+                }
+                // Erweiterung für prefab2135 bei Summe 5
+                else if (summe > letzterSchwellenwert && summe == 5 && prefab2135 != null)
+                {
+                    Instantiate(prefab2135, receiveContentEinführungsszene);
                     letzterSchwellenwert = summe;
                 }
             }

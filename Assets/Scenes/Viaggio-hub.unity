@@ -386,6 +386,7 @@ MonoBehaviour:
   prefab2131: {fileID: 2430243542450519463, guid: 4820fdcbe53574b60ace2279a0bd08d7, type: 3}
   prefab2133: {fileID: 6595699319811326318, guid: 64c0c6dbaa1f7404fb827425721a12b1, type: 3}
   prefab2134: {fileID: 773892825625120732, guid: 86dbaa3daf712463699200c7b4ca0e27, type: 3}
+  prefab2135: {fileID: 6416878464217336779, guid: 0f0178b6075de468d93d6cf49c2e40e0, type: 3}
   "receiveContentEinf\xFChrungsszene": {fileID: 1246321383}
 --- !u!4 &151037955 stripped
 Transform:

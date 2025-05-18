@@ -387,6 +387,9 @@ MonoBehaviour:
   prefab2133: {fileID: 6595699319811326318, guid: 64c0c6dbaa1f7404fb827425721a12b1, type: 3}
   prefab2134: {fileID: 773892825625120732, guid: 86dbaa3daf712463699200c7b4ca0e27, type: 3}
   prefab2135: {fileID: 6416878464217336779, guid: 0f0178b6075de468d93d6cf49c2e40e0, type: 3}
+  newMessageButton3: {fileID: 238933437}
+  sendButton: {fileID: 1170644566}
+  textArea: {fileID: 891274483}
   "receiveContentEinf\xFChrungsszene": {fileID: 1246321383}
 --- !u!4 &151037955 stripped
 Transform:
@@ -1458,6 +1461,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cde218d68a2824246b11e3139a4530bd, type: 3}
+--- !u!1 &891274483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6684150797079116536, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+  m_PrefabInstance: {fileID: 3808873123634208990}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &897653309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8132939956772425489, guid: 4feb22811f32544fbac568c12bbcd471, type: 3}

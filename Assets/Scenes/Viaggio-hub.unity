@@ -2087,7 +2087,7 @@ MonoBehaviour:
   "receiveContentEinf\xFChrungsszene": {fileID: 1246321383}
   inputRaetsel1: {fileID: 92623657}
   sendButton: {fileID: 1170644566}
-  enterText: {fileID: 996384877}
+  enterText: {fileID: 891274483}
   pressedColor: {r: 0.7, g: 0.7, b: 1, a: 1}
 --- !u!1 &996384877 stripped
 GameObject:

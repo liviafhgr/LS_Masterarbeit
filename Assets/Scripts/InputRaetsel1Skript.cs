@@ -16,6 +16,7 @@ public class InputRaetsel1Skript : MonoBehaviour
     [SerializeField] private Transform receiveContentEinführungsszene; // Ziel-Container für Instanziierung
 
     private string gespeicherterPlayerInput = "";
+    private bool raetselAbgeschlossen = false;
 
     // Die Liste deiner erlaubten Strings
     private HashSet<string> erlaubteAntworten = new HashSet<string>
@@ -194,7 +195,7 @@ public class InputRaetsel1Skript : MonoBehaviour
                 }
 
                 // Prüfung für prefab2131 (deine erlaubteAntworten2131-Liste)
-                if (!found)
+                if (!found && !raetselAbgeschlossen)
                 {
                     foreach (var antwort in erlaubteAntworten2131)
                     {
@@ -216,7 +217,8 @@ public class InputRaetsel1Skript : MonoBehaviour
                                     sendButton.SetActive(false);
                                 if (textArea != null)
                                     textArea.SetActive(false);
-                                gameObject.SetActive(false); // <-- Das komplette GameObject wird deaktiviert!
+                                raetselAbgeschlossen = true; // Rätsel abgeschlossen!
+                                gameObject.SetActive(false);
                             }
                             found = true;
                             break;
@@ -236,14 +238,14 @@ public class InputRaetsel1Skript : MonoBehaviour
 
                 // Prüfung für prefab2134: bei Summe 2, 3 oder 4
                 int summe = count2132 + count2133;
-                if (summe > letzterSchwellenwert && summe >= 2 && summe <= 4 && prefab2134 != null)
+                if (!raetselAbgeschlossen && summe > letzterSchwellenwert && summe >= 2 && summe <= 4 && prefab2134 != null)
                 {
                     Instantiate(prefab2134, receiveContentEinführungsszene);
                     letzterSchwellenwert = summe;
                 }
 
                 // Prüfung für prefab2135: bei Summe genau 5
-                if (summe > letzterSchwellenwert && summe == 5 && prefab2135 != null)
+                if (!raetselAbgeschlossen && summe > letzterSchwellenwert && summe == 5 && prefab2135 != null)
                 {
                     Instantiate(prefab2135, receiveContentEinführungsszene);
                     letzterSchwellenwert = summe;
@@ -253,7 +255,8 @@ public class InputRaetsel1Skript : MonoBehaviour
                         sendButton.SetActive(false);
                     if (textArea != null)
                         textArea.SetActive(false);
-                    gameObject.SetActive(false); // <-- Das komplette GameObject wird deaktiviert!
+                    raetselAbgeschlossen = true; // Rätsel abgeschlossen!
+                    gameObject.SetActive(false);
                 }
             }
         }

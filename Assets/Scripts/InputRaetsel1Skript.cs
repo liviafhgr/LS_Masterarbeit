@@ -8,6 +8,7 @@ public class InputRaetsel1Skript : MonoBehaviour
     [SerializeField] private GameObject prefab2122; // Prefab 2.12.2
     [SerializeField] private GameObject prefab2131; // Prefab 2.13.1
     [SerializeField] private GameObject prefab2133; // Prefab 2.13.3
+    [SerializeField] private GameObject prefab2134; // Prefab 2.13.4
     [SerializeField] private Transform receiveContentEinführungsszene; // Ziel-Container
 
     private string gespeicherterPlayerInput = "";
@@ -148,28 +149,27 @@ public class InputRaetsel1Skript : MonoBehaviour
         "Festa della Castagna Special - Fuoco d'Autunno"
     };
 
+    private int count2132 = 0; // Zähler für Prefab 2.13.2 (entspricht 2.13.1 in deinem Code)
+    private int count2133 = 0; // Zähler für Prefab 2.13.3
+    private int letzterSchwellenwert = 1; // Startwert 1, damit bei 2 das erste Mal ausgelöst wird
+
     void Update()
     {
         if (chatInputHandler != null)
         {
             string aktuellerInput = chatInputHandler.playerInput;
-
-            // Entferne ALLE Arten von Leerzeichen am Anfang und Ende (auch Unicode)
             string cleanedInput = aktuellerInput.Trim()
                 .Replace("’", "'")
                 .Replace("`", "'")
                 .Replace("´", "'")
                 .Trim('\u00A0', '\u2000', '\u2001', '\u2002', '\u2003', '\u2004', '\u2005', '\u2006', '\u2007', '\u2008', '\u2009', '\u200A', '\u202F', '\u205F', '\u3000');
 
-            // Nur speichern, wenn nicht leer und anders als der gespeicherte Wert
             if (!string.IsNullOrEmpty(cleanedInput) && cleanedInput != gespeicherterPlayerInput)
             {
                 gespeicherterPlayerInput = cleanedInput;
-                Debug.Log("Player Input gespeichert: '" + gespeicherterPlayerInput + "'");
-
                 bool found = false;
 
-                // Prüfung für prefab2122
+                // Prüfung für prefab2122 (deine große Liste)
                 foreach (var antwort in erlaubteAntworten)
                 {
                     string cleanedAntwort = antwort.Trim()
@@ -180,15 +180,16 @@ public class InputRaetsel1Skript : MonoBehaviour
 
                     if (string.Equals(cleanedInput, cleanedAntwort, System.StringComparison.OrdinalIgnoreCase))
                     {
-                        Debug.Log("Gültige Antwort erkannt, Prefab 2.12.2 wird instanziiert!");
                         if (prefab2122 != null && receiveContentEinführungsszene != null)
+                        {
                             Instantiate(prefab2122, receiveContentEinführungsszene);
+                        }
                         found = true;
                         break;
                     }
                 }
 
-                // Prüfung für prefab2131
+                // Prüfung für prefab2131 (deine erlaubteAntworten2131-Liste)
                 if (!found)
                 {
                     foreach (var antwort in erlaubteAntworten2131)
@@ -201,9 +202,11 @@ public class InputRaetsel1Skript : MonoBehaviour
 
                         if (string.Equals(cleanedInput, cleanedAntwort, System.StringComparison.OrdinalIgnoreCase))
                         {
-                            Debug.Log("Gültige Antwort erkannt, Prefab 2.13.1 wird instanziiert!");
                             if (prefab2131 != null && receiveContentEinführungsszene != null)
+                            {
                                 Instantiate(prefab2131, receiveContentEinführungsszene);
+                                count2132++;
+                            }
                             found = true;
                             break;
                         }
@@ -213,9 +216,19 @@ public class InputRaetsel1Skript : MonoBehaviour
                 // Prüfung für prefab2133 (alle anderen Eingaben, außer leer)
                 if (!found && !string.IsNullOrEmpty(cleanedInput))
                 {
-                    Debug.Log("Ungültige Antwort, Prefab 2.13.3 wird instanziiert!");
                     if (prefab2133 != null && receiveContentEinführungsszene != null)
+                    {
                         Instantiate(prefab2133, receiveContentEinführungsszene);
+                        count2133++;
+                    }
+                }
+
+                // Prüfung für prefab2134: bei Summe 2, 3 oder 4
+                int summe = count2132 + count2133;
+                if (summe > letzterSchwellenwert && summe >= 2 && summe <= 4 && prefab2134 != null)
+                {
+                    Instantiate(prefab2134, receiveContentEinführungsszene);
+                    letzterSchwellenwert = summe;
                 }
             }
         }

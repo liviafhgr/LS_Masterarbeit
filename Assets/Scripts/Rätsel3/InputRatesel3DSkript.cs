@@ -9,6 +9,10 @@ public class InputRatesel3DSkript : MonoBehaviour
     public GameObject hinweis4;            // Prefab für Hinweis nach 3 Fehlern
     public Transform receiveBoxContent;    // Ziel-Container für Instanziierung
 
+    public GameObject sendButton;          // Zu deaktivieren
+    public GameObject textArea;            // Zu deaktivieren
+    public GameObject newMessageButton3B;  // Zu aktivieren
+
     private int falscheAntwortCounter = 0; // Zähler für prefab3242
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -35,6 +39,19 @@ public class InputRatesel3DSkript : MonoBehaviour
             if (inputScript.playerInput == "4")
             {
                 Instantiate(prefab3241, receiveBoxContent);
+
+                // SendButton und TextArea deaktivieren
+                if (sendButton != null)
+                    sendButton.SetActive(false);
+                if (textArea != null)
+                    textArea.SetActive(false);
+
+                // Dieses GameObject deaktivieren
+                gameObject.SetActive(false);
+
+                // NewMessageButton3B aktivieren
+                if (newMessageButton3B != null)
+                    newMessageButton3B.SetActive(true);
             }
             else
             {

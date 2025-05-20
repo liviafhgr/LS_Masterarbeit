@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1400
+      value: 1085.3408
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.y
@@ -94,12 +94,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_text
-      value: "Se pensate di avere la risposta, scrivetela nella chat \U0001F4AC.
-        Esempio: Hello Winter"
+      value: "Se pensate di avere la risposta, scrivetela nella chat \U0001F4DD.
+        \nEsempio: Hello Winter "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987188531455403280, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_Name
       value: 2.11TextnachrichtLuca Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 913
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

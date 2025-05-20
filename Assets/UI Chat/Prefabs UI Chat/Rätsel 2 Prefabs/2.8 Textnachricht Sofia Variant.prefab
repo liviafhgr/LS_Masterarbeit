@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1400
+      value: 402.5577
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.y
@@ -96,9 +96,17 @@ PrefabInstance:
       propertyPath: m_text
       value: "\U0001F440\U0001F50D\U0001F525\U0001F330"
       objectReference: {fileID: 0}
+    - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5987188531455403280, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_Name
       value: 2.8 Textnachricht Sofia Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 231
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

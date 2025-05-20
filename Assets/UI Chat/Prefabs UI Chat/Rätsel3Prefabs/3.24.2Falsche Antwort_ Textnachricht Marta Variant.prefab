@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 650
+      value: 701.4922
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.y
@@ -96,13 +96,17 @@ PrefabInstance:
       propertyPath: m_text
       value: "Quasi\U0001F44E! Provate ancora \U0001F60A\U0001F44D"
       objectReference: {fileID: 0}
+    - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5987188531455403280, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_Name
       value: 3.24.2Falsche Antwort_ Textnachricht Marta Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 469
+      value: 532
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

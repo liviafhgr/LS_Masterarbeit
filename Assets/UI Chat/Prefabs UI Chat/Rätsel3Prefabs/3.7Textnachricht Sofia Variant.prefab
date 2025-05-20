@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1400
+      value: 403.8491
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.y
@@ -94,11 +94,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_text
-      value: "Bargaiot \U0001F92B\U0001F4DD"
+      value: "Bargaiot \U0001F92B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987188531455403280, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_Name
       value: 3.7Textnachricht Sofia Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 228
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

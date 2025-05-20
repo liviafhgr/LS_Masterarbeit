@@ -95,8 +95,12 @@ PrefabInstance:
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_text
       value: "Bravissimi! \U0001F44F La festa si chiama \"Festival della Castagna
-        Special - Fuoco d'Autunno\". castagna \U0001F330 \xE8 un pezzo della password
+        Special - Fuoco d'Autunno\". *castagna* \U0001F330 \xE8 un pezzo della password
         \U0001F511."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987188531455403280, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_Name

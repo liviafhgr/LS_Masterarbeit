@@ -95,8 +95,12 @@ PrefabInstance:
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_text
       value: "La soluzione \xE8 \"Festival della Castagna Special - Fuoco d'Autunno\".
-        \xC8 il poster con la castagna \U0001F330 e il fuoco \U0001F525. castagna
-        \U0001F330 \xE8 un pezzo della password \U0001F511."
+        \xC8 il poster con la castagna \U0001F330 e il fuoco \U0001F525. *castagna
+        *\U0001F330 \xE8 un pezzo della password \U0001F511."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_ActiveFontFeatures.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987188531455403280, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_Name

@@ -97,6 +97,10 @@ PrefabInstance:
       value: "Bella festa, ma non \xE8 quella della sera con Francesca. Guarda meglio
         i simboli dell'indizio \U0001F604\U0001F50D."
       objectReference: {fileID: 0}
+    - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_margin.z
+      value: -7.8129883
+      objectReference: {fileID: 0}
     - target: {fileID: 5987188531455403280, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_Name
       value: 2.13.2Eingabe Spieler Antwort falsche Party  Variant

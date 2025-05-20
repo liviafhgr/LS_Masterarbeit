@@ -1839,6 +1839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1115039248}
+  - component: {fileID: 1115039249}
   m_Layer: 5
   m_Name: InputRatesel3CSkript
   m_TagString: Untagged
@@ -1865,6 +1866,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1115039249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115039247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5996d43eb740c48c0b3f2c0ee467609a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sendingBoxContent: {fileID: 7368819040184606900}
+  prefab3201: {fileID: 8424735510623898596, guid: b797e06bd249e42f8ab08bf02494917e, type: 3}
+  prefab3202: {fileID: 8392596523477354090, guid: 6a685d1b786144916b43358d8b67749c, type: 3}
+  receiveBoxContent: {fileID: 1246321383}
 --- !u!1001 &1119858523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3911,7 +3928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -3919,6 +3936,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
@@ -3930,11 +3951,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1310984727}
     - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1115039249}
+    - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
@@ -3946,6 +3975,10 @@ PrefabInstance:
       value: CheckInput
       objectReference: {fileID: 0}
     - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: CheckInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InputRaetsel3Skript, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -3954,11 +3987,19 @@ PrefabInstance:
       value: InputRatesel3BSkript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: InputRatesel3CSkript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404438562654245919, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8746158094099178789, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}

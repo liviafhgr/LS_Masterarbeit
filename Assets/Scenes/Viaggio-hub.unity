@@ -487,7 +487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &238933439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1504,9 +1504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bc372aedeab4510a43341db4cc7958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sendingBoxContent: {fileID: 7368819040184606900}
-  prefab3121: {fileID: 4837274474151901930, guid: f7567e43985d84d97b6f5b2704e19f6f, type: 3}
-  prefab3122: {fileID: 1448146517399062225, guid: c063bbe4b92824812b99863b94cc5343, type: 3}
 --- !u!4 &897653309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8132939956772425489, guid: 4feb22811f32544fbac568c12bbcd471, type: 3}
@@ -1979,7 +1976,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &991563361
 RectTransform:
   m_ObjectHideFlags: 0

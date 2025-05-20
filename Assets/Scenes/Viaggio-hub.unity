@@ -1881,6 +1881,7 @@ MonoBehaviour:
   sendingBoxContent: {fileID: 7368819040184606900}
   prefab3201: {fileID: 8424735510623898596, guid: b797e06bd249e42f8ab08bf02494917e, type: 3}
   prefab3202: {fileID: 8392596523477354090, guid: 6a685d1b786144916b43358d8b67749c, type: 3}
+  hinweis3: {fileID: 7242354875697570583, guid: 06160b9d3070940bfb1fea32d2b763e4, type: 3}
   receiveBoxContent: {fileID: 1246321383}
 --- !u!1001 &1119858523
 PrefabInstance:

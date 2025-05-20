@@ -3702,6 +3702,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 891274483}
     - target: {fileID: 1771762695103760073, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: prefab313
+      value: 
+      objectReference: {fileID: 6187657544494089346, guid: 037fba176f0594d1a9c6fa950dcf8058, type: 3}
+    - target: {fileID: 1771762695103760073, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: prefab314
+      value: 
+      objectReference: {fileID: 5930017665506924622, guid: 58b9def97ce5f461cbc8563430d9f86d, type: 3}
+    - target: {fileID: 1771762695103760073, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: prefab3121
       value: 
       objectReference: {fileID: 4837274474151901930, guid: f7567e43985d84d97b6f5b2704e19f6f, type: 3}
@@ -3727,6 +3735,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1771762695103760073, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: inputRaetsel3Objekt
+      value: 
+      objectReference: {fileID: 1310984725}
+    - target: {fileID: 1771762695103760073, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      propertyPath: inputRaetsel3BObjekt
       value: 
       objectReference: {fileID: 1310984725}
     - target: {fileID: 3336694126914100675, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}

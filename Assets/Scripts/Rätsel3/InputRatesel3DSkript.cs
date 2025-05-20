@@ -6,7 +6,10 @@ public class InputRatesel3DSkript : MonoBehaviour
     public GameObject sendingBoxContent;   // GameObject mit ChatInputHandler
     public GameObject prefab3241;          // Prefab für richtige Antwort ("4")
     public GameObject prefab3242;          // Prefab für falsche Antwort
+    public GameObject hinweis4;            // Prefab für Hinweis nach 3 Fehlern
     public Transform receiveBoxContent;    // Ziel-Container für Instanziierung
+
+    private int falscheAntwortCounter = 0; // Zähler für prefab3242
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,6 +39,11 @@ public class InputRatesel3DSkript : MonoBehaviour
             else
             {
                 Instantiate(prefab3242, receiveBoxContent);
+                falscheAntwortCounter++;
+                if (falscheAntwortCounter == 3 && hinweis4 != null)
+                {
+                    Instantiate(hinweis4, receiveBoxContent);
+                }
             }
         }
     }

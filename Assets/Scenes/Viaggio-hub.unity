@@ -2278,6 +2278,7 @@ MonoBehaviour:
   sendingBoxContent: {fileID: 7368819040184606900}
   prefab3241: {fileID: 8120764370113869160, guid: 0ae37fe3114a14b039c841e7ad1f00e8, type: 3}
   prefab3242: {fileID: 6854823696759994539, guid: 82166bf1cea424f49b6338e7fd8ba223, type: 3}
+  hinweis4: {fileID: 1298357418309219189, guid: 47b23593283be464d92fcb96bdf5a866, type: 3}
   receiveBoxContent: {fileID: 1246321383}
 --- !u!4 &1495498919 stripped
 Transform:

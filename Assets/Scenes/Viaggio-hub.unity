@@ -1995,7 +1995,10 @@ MonoBehaviour:
   prefab3241: {fileID: 8120764370113869160, guid: 0ae37fe3114a14b039c841e7ad1f00e8, type: 3}
   prefab3242: {fileID: 6854823696759994539, guid: 82166bf1cea424f49b6338e7fd8ba223, type: 3}
   hinweis4: {fileID: 1298357418309219189, guid: 47b23593283be464d92fcb96bdf5a866, type: 3}
+  prefab325: {fileID: 0}
+  prefab326: {fileID: 0}
   receiveBoxContent: {fileID: 1246321383}
+  inputRaetsel3EObjekt: {fileID: 0}
 --- !u!4 &1145260925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e1bd98a6fc5f84289aad9dbf8b10eba6, type: 3}
@@ -2332,7 +2335,10 @@ MonoBehaviour:
   prefab3241: {fileID: 8120764370113869160, guid: 0ae37fe3114a14b039c841e7ad1f00e8, type: 3}
   prefab3242: {fileID: 6854823696759994539, guid: 82166bf1cea424f49b6338e7fd8ba223, type: 3}
   hinweis4: {fileID: 1298357418309219189, guid: 47b23593283be464d92fcb96bdf5a866, type: 3}
+  prefab325: {fileID: 7348189548337899845, guid: 1fe810f0a3c5a4ee88b5265050c2dc8b, type: 3}
+  prefab326: {fileID: 3768061927995268189, guid: 79510f88ff6ca411da4c5b4835e9a7f8, type: 3}
   receiveBoxContent: {fileID: 1246321383}
+  inputRaetsel3EObjekt: {fileID: 1125702810}
 --- !u!4 &1495498919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6081975226098391305, guid: cde218d68a2824246b11e3139a4530bd, type: 3}

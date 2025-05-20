@@ -1830,6 +1830,41 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1bd98a6fc5f84289aad9dbf8b10eba6, type: 3}
+--- !u!1 &1115039247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115039248}
+  m_Layer: 5
+  m_Name: InputRatesel3CSkript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1115039248
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115039247}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3808873123634208991}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1119858523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1974,7 +2009,10 @@ MonoBehaviour:
   prefab3161: {fileID: 3242798089098358251, guid: ae9bf06fb06fe43229875f59669c0eff, type: 3}
   prefab3162: {fileID: 5627618869143037583, guid: b91042be2bec14108a446d1b89949730, type: 3}
   hinweis2: {fileID: 5531827147465412138, guid: 5eddc5c8ba56d4f608973da8cfd7e524, type: 3}
+  prefab317: {fileID: 4564197457469497072, guid: 69c3b7f31e7e546acae541b7e338f7a3, type: 3}
+  prefab318: {fileID: 331876488249457833, guid: a3c9148a8dc8d48bea1cfca0fdaec12a, type: 3}
   receiveBoxContent: {fileID: 1246321383}
+  inputRaetsel3cObjekt: {fileID: 1115039247}
 --- !u!4 &1314347349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6457642912798078113, guid: 295d72883a7794736bec5f2924645e5a, type: 3}
@@ -3945,6 +3983,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6782318205184908769, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1310984726}
+    - targetCorrespondingSourceObject: {fileID: 6782318205184908769, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1115039248}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
 --- !u!224 &3808873123634208991 stripped

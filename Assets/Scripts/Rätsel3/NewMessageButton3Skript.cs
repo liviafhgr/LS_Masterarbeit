@@ -43,7 +43,7 @@ public class NewMessageButton3Skript : MonoBehaviour
             Instantiate(prefabs[currentIndex], recieveBoxContent);
             currentIndex++;
 
-            if (currentIndex == 10) // Nach dem 10. Prefab (Index 9)
+            if (currentIndex == 11) // Nach dem 11. Prefab (Index 10)
             {
                 // Button deaktivieren
                 GetComponent<Button>().interactable = false;

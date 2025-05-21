@@ -16,7 +16,31 @@ public class InputRatesel4Skript : MonoBehaviour
     // Liste aller erlaubten Schreibweisen
     private readonly HashSet<string> matildaVarianten = new HashSet<string>()
     {
-        "matilda", "mathilda", "mathilde", "matilde", "matillda", "matylda", "matyllda"
+        "matilda",
+        "mathilda",
+        "mathilde",
+        "matilde",
+        "mattilda",
+        "mattilde",
+        "matillda",
+        "matildaa",
+        "matidla",
+        "matlida",
+        "matiltda",
+        "matildva",
+        "matylda",
+        "matyllda",
+        "metilda",
+        "madilda",
+        "maitilda",
+        "madtilda",
+        "mazilda",
+        "matilda1",
+        "matilda!",
+        "mat!lda",
+        "m@tilda",
+        "m4tilda",
+        "mat_il_da"
     };
 
     void Update()

@@ -9,6 +9,8 @@ public class InputRatesel3ESkript : MonoBehaviour
     public Transform receiveBoxContent;    // Ziel-Container für Instanziierung
 
     public GameObject newMessageButton4;   // Button mit NewMessageButton4Skript
+    public GameObject sendButton;          // Zu deaktivieren
+    public GameObject textArea;            // Zu deaktivieren
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,6 +40,12 @@ public class InputRatesel3ESkript : MonoBehaviour
                 // Button aktivieren
                 if (newMessageButton4 != null)
                     newMessageButton4.SetActive(true);
+
+                // SendButton und TextArea deaktivieren
+                if (sendButton != null)
+                    sendButton.SetActive(false);
+                if (textArea != null)
+                    textArea.SetActive(false);
 
                 // Dieses Skript deaktivieren
                 gameObject.SetActive(false);

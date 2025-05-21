@@ -2141,6 +2141,8 @@ MonoBehaviour:
   prefab3271: {fileID: 1323104694366302712, guid: a27f4f1d526f14af388e83b4a8dca6da, type: 3}
   receiveBoxContent: {fileID: 1246321383}
   newMessageButton4: {fileID: 1001671352}
+  sendButton: {fileID: 1170644566}
+  textArea: {fileID: 891274483}
 --- !u!4 &1145260925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e1bd98a6fc5f84289aad9dbf8b10eba6, type: 3}

@@ -10,6 +10,10 @@ public class InputRatesel4CSkript : MonoBehaviour
     public GameObject prefab420;           // Prefab für nächste Nachricht
     public Transform receiveBoxContent;    // Ziel-Container für Instanziierung
 
+    public GameObject sendButton;          // Zu deaktivieren
+    public GameObject textArea;            // Zu deaktivieren
+    public GameObject newMessageButton5;   // Zu aktivieren
+
     // Liste aller erlaubten Schreibweisen für "simonetta"
     private readonly HashSet<string> simonettaVarianten = new HashSet<string>()
     {
@@ -49,6 +53,19 @@ public class InputRatesel4CSkript : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 if (prefab420 != null)
                     Instantiate(prefab420, receiveBoxContent);
+
+                // Nach prefab420: sendButton und textArea deaktivieren
+                if (sendButton != null)
+                    sendButton.SetActive(false);
+                if (textArea != null)
+                    textArea.SetActive(false);
+
+                // NewMessageButton5 aktivieren
+                if (newMessageButton5 != null)
+                    newMessageButton5.SetActive(true);
+
+                // Dieses GameObject deaktivieren
+                gameObject.SetActive(false);
             }
             else
             {

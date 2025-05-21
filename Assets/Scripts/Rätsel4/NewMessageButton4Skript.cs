@@ -8,6 +8,10 @@ public class NewMessageButton4Skript : MonoBehaviour
     public List<GameObject> prefabs;           // Prefabs im Inspector zuweisen
     public Transform receiveBoxContent;        // Ziel-Container im Inspector zuweisen
 
+    public GameObject textArea;                // Zu aktivieren
+    public GameObject sendButton;              // Zu aktivieren
+    public GameObject inputRaetsel4Objekt;     // Zu aktivieren (mit InputRatesel4Skript)
+
     private int currentIndex = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,6 +46,16 @@ public class NewMessageButton4Skript : MonoBehaviour
         {
             Instantiate(prefabs[currentIndex], receiveBoxContent);
             currentIndex++;
+
+            if (currentIndex == 10) // Nach dem 10. Prefab (Index 9)
+            {
+                if (textArea != null) textArea.SetActive(true);
+                if (sendButton != null) sendButton.SetActive(true);
+                if (inputRaetsel4Objekt != null) inputRaetsel4Objekt.SetActive(true);
+
+                // Dieses GameObject (Button + Skript) deaktivieren
+                gameObject.SetActive(false);
+            }
         }
         else
         {

@@ -337,6 +337,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 736057328725995462, guid: 99813817130794baa95b6e1f3bb82528, type: 3}
   m_PrefabInstance: {fileID: 6321271538946601440}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &175403166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175403167}
+  m_Layer: 5
+  m_Name: InputRatesel4Skript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &175403167
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175403166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3808873123634208991}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &179785377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1657,6 +1692,9 @@ MonoBehaviour:
   - {fileID: 3409024368251805082, guid: 7335c934290154c85aafd5b2ca8a8ef1, type: 3}
   - {fileID: 2330157235324618000, guid: 7dbbf388dd76f41d4aac93f662c7cd1e, type: 3}
   receiveBoxContent: {fileID: 1246321383}
+  textArea: {fileID: 891274483}
+  sendButton: {fileID: 1170644566}
+  inputRaetsel4Objekt: {fileID: 175403166}
 --- !u!114 &1001671355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4380,6 +4418,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6782318205184908769, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1001671353}
+    - targetCorrespondingSourceObject: {fileID: 6782318205184908769, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 175403167}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
 --- !u!224 &3808873123634208991 stripped

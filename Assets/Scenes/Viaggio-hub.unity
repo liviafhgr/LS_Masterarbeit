@@ -1752,6 +1752,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa255959f4c7d440d960377011a8cae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sendingBoxContent: {fileID: 7368819040184606900}
+  prefab41991: {fileID: 6138324076887452669, guid: 05e6a4ee0b09d41889567459e976eac9, type: 3}
+  prefab4192: {fileID: 8520431155119969417, guid: 4ff3e77ce90a8428bb94bf8cf9373940, type: 3}
+  prefab420: {fileID: 487437210266965665, guid: 62731cbf0f52d4ba68c425b5c00ccdb5, type: 3}
+  receiveBoxContent: {fileID: 1246321383}
 --- !u!1 &1001671352
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro; // Import für TextMeshPro
+//Farbe Button anpassen bei Enter-Tase und Pfeil
+
 
 public class ChatInputHandler : MonoBehaviour
 {

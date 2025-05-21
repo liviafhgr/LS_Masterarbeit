@@ -11,6 +11,8 @@ public class InputRatesel4BSkript : MonoBehaviour
     public GameObject prefab417;           // Prefab für nächste Nachricht
     public Transform receiveBoxContent;    // Ziel-Container für Instanziierung
 
+    public GameObject inputRaetsel4CObjekt; // GameObject mit InputRatesel4CSkript
+
     // Liste aller erlaubten Schreibweisen für "davide"
     private readonly HashSet<string> davideVarianten = new HashSet<string>()
     {
@@ -53,6 +55,12 @@ public class InputRatesel4BSkript : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 if (prefab417 != null)
                     Instantiate(prefab417, receiveBoxContent);
+
+                // Nach prefab417: nächstes Rätsel aktivieren, dieses deaktivieren
+                if (inputRaetsel4CObjekt != null)
+                    inputRaetsel4CObjekt.SetActive(true);
+
+                gameObject.SetActive(false);
             }
             else
             {

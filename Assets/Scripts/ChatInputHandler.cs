@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Import für TextMeshPro
+using TMPro;
+using System.Collections; // <--- Das muss dazu!
+
 //Farbe Button anpassen bei Enter-Tase und Pfeil
 
 
@@ -27,19 +29,30 @@ public class ChatInputHandler : MonoBehaviour
             sendButton.onClick.AddListener(() =>
             {
                 SavePlayerInput();
-                ClearInputField(); // Leere das Textfeld
-                HighlightSendButton();
-                ResetSendButtonColor();
+                ClearInputField();
+                StartCoroutine(HighlightSendButtonCoroutine());
             });
 
             // Listener für die Enter-Taste
             inputField.onSubmit.AddListener(delegate
             {
                 SavePlayerInput();
-                ClearInputField(); // Leere das Textfeld
-                HighlightSendButton();
-                ResetSendButtonColor();
+                ClearInputField();
+                StartCoroutine(HighlightSendButtonCoroutine());
             });
+        }
+    }
+
+    IEnumerator HighlightSendButtonCoroutine()
+    {
+        Image buttonImage = sendButton.GetComponent<Image>();
+        if (buttonImage != null)
+        {
+            // Pressed Color aus Button-Component holen
+            Color pressedColor = sendButton.colors.pressedColor;
+            buttonImage.color = pressedColor;
+            yield return new WaitForSeconds(0.15f); // Farbe bleibt 0.15 Sekunden
+            buttonImage.color = originalColor;
         }
     }
 

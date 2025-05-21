@@ -8,6 +8,8 @@ public class InputRatesel3ESkript : MonoBehaviour
     public GameObject prefab3271;          // Prefab für falsche Antwort
     public Transform receiveBoxContent;    // Ziel-Container für Instanziierung
 
+    public GameObject newMessageButton4;   // Button mit NewMessageButton4Skript
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,6 +34,13 @@ public class InputRatesel3ESkript : MonoBehaviour
             if (inputScript.playerInput == "6324")
             {
                 Instantiate(prefab3272, receiveBoxContent);
+
+                // Button aktivieren
+                if (newMessageButton4 != null)
+                    newMessageButton4.SetActive(true);
+
+                // Dieses Skript deaktivieren
+                gameObject.SetActive(false);
             }
             else
             {

@@ -94,9 +94,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_text
-      value: "\U0001F68D\U0001F4EFAndate alla fermata dell\u2019autopostale di Maloja.\r\n.
-        Toccate le persone per sentire le loro storie \U0001F447\U0001F3A7.Ho delle
-        domande a riguardo\u23EF\U0001F3A7\u2753.\r"
+      value: "\U0001F68D\U0001F4EFAndate alla fermata dell\u2019autopostale di Maloja.\r\nToccate
+        le persone per sentire le loro storie \U0001F447\U0001F3A7.Ho delle domande
+        a riguardo\u23EF\U0001F3A7\u2753.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.size

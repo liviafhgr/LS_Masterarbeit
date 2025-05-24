@@ -1087,6 +1087,9 @@ MonoBehaviour:
   - {fileID: 3830896230190882755, guid: dcb09e5b35e364794982a4f8541c92c2, type: 3}
   - {fileID: 8197552306379604532, guid: b54992370c21e48ca9e06829cd6a3b9e, type: 3}
   receiveBoxContent: {fileID: 1246321383}
+  inputRaetsel5Objekt: {fileID: 872432561}
+  sendButton: {fileID: 1170644566}
+  textArea: {fileID: 891274483}
 --- !u!114 &547079216
 MonoBehaviour:
   m_ObjectHideFlags: 0

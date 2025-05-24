@@ -9,6 +9,10 @@ public class NewMessageButton5 : MonoBehaviour
     public List<GameObject> prefabs;           // Prefabs im Inspector zuweisen
     public Transform receiveBoxContent;        // Ziel-Container im Inspector zuweisen
 
+    public GameObject inputRaetsel5Objekt;   // Im Inspector zuweisen
+    public GameObject sendButton;            // Im Inspector zuweisen
+    public GameObject textArea;              // Im Inspector zuweisen
+
     private int currentIndex = 0;
     private Button button;
     private Image buttonImage;
@@ -51,6 +55,19 @@ public class NewMessageButton5 : MonoBehaviour
         {
             Instantiate(prefabs[currentIndex], receiveBoxContent);
             currentIndex++;
+
+            if (currentIndex == 6) // Nach dem 6. Prefab (Index 5)
+            {
+                if (inputRaetsel5Objekt != null)
+                    inputRaetsel5Objekt.SetActive(true);
+                if (sendButton != null)
+                    sendButton.SetActive(true);
+                if (textArea != null)
+                    textArea.SetActive(true);
+
+                // Dieses GameObject (Button + Skript) deaktivieren
+                gameObject.SetActive(false);
+            }
         }
         else
         {

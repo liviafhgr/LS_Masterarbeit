@@ -1547,6 +1547,9 @@ MonoBehaviour:
   sendingBoxContent: {fileID: 7368819040184606900}
   prefab561: {fileID: 6567270310480157968, guid: 5944d7ba9863b47508247ee808d57102, type: 3}
   prefab562: {fileID: 8483486486617066095, guid: 54c3bafc3bbe1456e8019f09b2c60e97, type: 3}
+  prefab563: {fileID: 1096194456070205755, guid: d15005c3b740b495a98b2c22a98190ca, type: 3}
+  prefab564: {fileID: 846826614816970597, guid: 2c428d779e9ca4d02855db800fc30663, type: 3}
+  prefab565: {fileID: 7264980631048259063, guid: b32ba4a6fe8b14f77be5e8760a8d07f3, type: 3}
   receiveBoxContent: {fileID: 1246321383}
 --- !u!1 &891274483 stripped
 GameObject:

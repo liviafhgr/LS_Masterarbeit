@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d9edbeb44f990472d93a7a93a399d01d, type: 3}
+    - target: {fileID: 4286927900892617236, guid: 38a45590c5d4f428face317d5b6d3c74, type: 3}
+      propertyPath: m_Url
+      value: https://liviafhgr.github.io/Bregaglia/Benvenuti%20nel%20commune%20di%20Bregaglia-2.mp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286927900892617236, guid: 38a45590c5d4f428face317d5b6d3c74, type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5478548223545186871, guid: 38a45590c5d4f428face317d5b6d3c74, type: 3}
       propertyPath: m_Color.b
       value: 1

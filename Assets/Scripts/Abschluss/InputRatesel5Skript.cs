@@ -9,6 +9,7 @@ public class InputRatesel5Skript : MonoBehaviour
     public GameObject prefab563;           // Prefab für Hinweis nach 3/4 Fehlern
     public GameObject prefab564;           // Prefab für Hinweis nach 5/6 Fehlern
     public GameObject prefab565;           // Prefab für Hinweis ab 7 Fehlern
+    public GameObject ueberleitungPrefab;  // Prefab für Überleitung (neu!)
     public Transform receiveBoxContent;    // Ziel-Container für Instanziierung
 
     private int wrongCount = 0;
@@ -43,6 +44,12 @@ public class InputRatesel5Skript : MonoBehaviour
             if (eingabe == "*6324**castagna**madasi*")
             {
                 Instantiate(prefab561, receiveBoxContent);
+                // Nach 2 Sekunden Überleitung instanziieren
+                if (ueberleitungPrefab != null)
+                {
+                    yield return new WaitForSeconds(2f);
+                    Instantiate(ueberleitungPrefab, receiveBoxContent);
+                }
             }
             else
             {

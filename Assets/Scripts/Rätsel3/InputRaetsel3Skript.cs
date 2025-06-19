@@ -15,11 +15,15 @@ public class InputRaetsel3Skript : MonoBehaviour
 
     private int falscheAntwortCounter = 0; // Zähler für prefab3122
 
+    //Gegen Error CoRoutinne (UnityCoaching)
+    private bool hasStarted;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) && hasStarted)
         {
             StartCoroutine(CheckInputNextFrame());
+            hasStarted = true;
         }
     }
 

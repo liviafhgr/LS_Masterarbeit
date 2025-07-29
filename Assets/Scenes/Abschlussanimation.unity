@@ -1336,7 +1336,7 @@ GameObject:
   - component: {fileID: 444507317}
   - component: {fileID: 444507320}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Button Download
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1405,7 +1405,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 444507318}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 444507320}
+        m_TargetAssemblyTypeName: OpenUrlButton, Assembly-CSharp
+        m_MethodName: OpenViaggioUrl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &444507318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,7 +1795,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.5
+  m_fontSize: 72
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2244,7 +2256,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.4
+  m_fontSize: 72
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2887,10 +2899,10 @@ RectTransform:
   m_Father: {fileID: 1964919606}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 0}
-  m_Pivot: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1150, y: 0}
+  m_SizeDelta: {x: -2300, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &948730418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2947,7 +2959,7 @@ MonoBehaviour:
     m_Top: 30
     m_Bottom: 30
   m_ChildAlignment: 0
-  m_Spacing: 10
+  m_Spacing: 30
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -3804,7 +3816,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.85
+  m_fontSize: 72
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4197,8 +4209,9 @@ GameObject:
   - component: {fileID: 1270549588}
   - component: {fileID: 1270549587}
   - component: {fileID: 1270549586}
+  - component: {fileID: 1270549589}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: Button Gameideen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4267,7 +4280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1270549587}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1270549589}
+        m_TargetAssemblyTypeName: OpenViaggioWebsite, Assembly-CSharp
+        m_MethodName: OpenWebsite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1270549587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4306,6 +4331,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270549584}
   m_CullTransparentMesh: 1
+--- !u!114 &1270549589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270549584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b2bb365964be43df80b9edef2c5308a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1287150868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5409,8 +5446,9 @@ GameObject:
   - component: {fileID: 1616999381}
   - component: {fileID: 1616999380}
   - component: {fileID: 1616999379}
+  - component: {fileID: 1616999382}
   m_Layer: 0
-  m_Name: Impressum
+  m_Name: Button Lizenzen und Rechte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5479,7 +5517,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1616999380}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1616999382}
+        m_TargetAssemblyTypeName: OpenDCMasterPortfolio, Assembly-CSharp
+        m_MethodName: OpenWebsite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1616999380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5518,6 +5568,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616999377}
   m_CullTransparentMesh: 1
+--- !u!114 &1616999382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616999377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff3c8ed6b39734f29bc59668fc686676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1640465234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5778,7 +5840,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.85
+  m_fontSize: 72
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6854,8 +6916,9 @@ GameObject:
   - component: {fileID: 2064083738}
   - component: {fileID: 2064083737}
   - component: {fileID: 2064083736}
+  - component: {fileID: 2064083739}
   m_Layer: 0
-  m_Name: Button (2)
+  m_Name: Button Feedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6924,7 +6987,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2064083737}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2064083739}
+        m_TargetAssemblyTypeName: OpenViaggioPage, Assembly-CSharp
+        m_MethodName: OpenWebsite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2064083737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6963,6 +7038,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064083734}
   m_CullTransparentMesh: 1
+--- !u!114 &2064083739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064083734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4f5155234104cdcbb6bbb17ca7aa30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2064851131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 356349808503537816, guid: dbf077b50101d4c68b1b90d30e0a14cd, type: 3}

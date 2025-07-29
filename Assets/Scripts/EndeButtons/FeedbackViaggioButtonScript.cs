@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class OpenUrlButton : MonoBehaviour
+public class OpenViaggioPage : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,7 +14,7 @@ public class OpenUrlButton : MonoBehaviour
         
     }
 
-    public void OpenViaggioUrl()
+    public void OpenWebsite()
     {
         Application.OpenURL("https://www.fhgr.ch/fh-graubuenden/angewandte-zukunftstechnologien/institut-fuer-multimedia-production-imp/viagg-io-entdeckungsreise-in-die-sprache-und-kultur-der-italienischsprachigen-schweiz/");
     }

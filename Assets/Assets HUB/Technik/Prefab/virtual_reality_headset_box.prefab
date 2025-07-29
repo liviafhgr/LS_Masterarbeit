@@ -9,16 +9,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.1768444
+      value: -2.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.79170465
+      value: -0.028595328
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.23799992
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
       propertyPath: m_LocalRotation.z
@@ -52,6 +64,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: virtual_reality_headset_box
       objectReference: {fileID: 0}
+    - target: {fileID: 2730711966761819900, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ae41e1670bec4cf884ca807b400cf88, type: 2}
+    - target: {fileID: 2920686591946902138, guid: af1ecca797d0b44e0becb14776752d73, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ae41e1670bec4cf884ca807b400cf88, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

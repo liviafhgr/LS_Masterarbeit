@@ -60,6 +60,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4565713061010943101, guid: 5fe728ec210fa490c9cdc0546ca75bc9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3e9ae5c82b3984ded89c7f96014682ed, type: 2}
+    - target: {fileID: -3285378800646228901, guid: 5fe728ec210fa490c9cdc0546ca75bc9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7a1232adbaf684522b537655d90653df, type: 2}
+    - target: {fileID: 786940533670319541, guid: 5fe728ec210fa490c9cdc0546ca75bc9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3e9ae5c82b3984ded89c7f96014682ed, type: 2}
     - target: {fileID: 919132149155446097, guid: 5fe728ec210fa490c9cdc0546ca75bc9, type: 3}
       propertyPath: m_Name
       value: monitor_v02

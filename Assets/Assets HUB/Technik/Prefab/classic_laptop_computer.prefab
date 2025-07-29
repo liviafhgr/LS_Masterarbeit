@@ -48,10 +48,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5587435963218262969, guid: bdb1f9e8bf3c7460a9d64ac0ef3b847a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3e9ae5c82b3984ded89c7f96014682ed, type: 2}
     - target: {fileID: 919132149155446097, guid: bdb1f9e8bf3c7460a9d64ac0ef3b847a, type: 3}
       propertyPath: m_Name
       value: classic_laptop_computer
       objectReference: {fileID: 0}
+    - target: {fileID: 1385341707155036147, guid: bdb1f9e8bf3c7460a9d64ac0ef3b847a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3e9ae5c82b3984ded89c7f96014682ed, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

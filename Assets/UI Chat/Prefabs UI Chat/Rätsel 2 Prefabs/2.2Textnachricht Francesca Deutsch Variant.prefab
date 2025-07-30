@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1721.4595
+      value: 1010
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.y
@@ -108,7 +108,7 @@ PrefabInstance:
       propertyPath: m_text
       value: "QR-Code im Raum scannen\nAdobe Aero AR-Szene \xF6ffnen\nHandy weglegen,
         sobald der Ladekreis erscheint\nAuf Chat-Nachrichten konzentrieren\nWarten,
-        bis ich euch im Chat zum Start der AR-Szene auffordere\nDann auf \xABWeiter\xBB
+        bis ich euch im Chat zum Start der \nAR-Szene auffordere\nDann auf \xABWeiter\xBB
         tippen \u2013 AR-Szene startet"
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1552
+      value: 841
       objectReference: {fileID: 0}
     - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_AnchoredPosition.y

@@ -8,5 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Viaggio-hub.unity
     guid: cd4a8d6f1d2aa4bc299469c609265adf
+  - enabled: 1
+    path: Assets/Scenes/Abschlussanimation.unity
+    guid: 905b7a8a9dad34051867e1a0c8510bca
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

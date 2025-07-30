@@ -106,9 +106,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_text
-      value: "Eure Testingzeit ist jetzt abgelaufen oder ihr seid am Ende des Hauptteils
-        angekommen. Das war's erstmal mit dem aktiven Spielen! Lese die Anweisung
-        \xABDas Spiel ist zu Ende\xBB in deinen Unterlagen."
+      value: "Das Passwort hat funktioniert, das Game ist jetzt offiziell ver\xF6ffentlicht
+        und bereits zum Download verf\xFCgbar. Ihr wart ein super Team. Die Reise
+        durchs Bergell ist geschafft. Kommt ins Gameb\xFCro Viaggio HUB zum Feiern!"
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_fontColor.b

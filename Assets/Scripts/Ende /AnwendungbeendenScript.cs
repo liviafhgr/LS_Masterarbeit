@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AnwendungbeendenScript : MonoBehaviour
+public class QuitApplicationButton : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -12,5 +12,14 @@ public class AnwendungbeendenScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void QuitApp()
+    {
+        Application.Quit();
+        // Für den Editor (nur zum Testen, im Build nicht nötig):
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

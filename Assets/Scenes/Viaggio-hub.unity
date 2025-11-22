@@ -1417,7 +1417,7 @@ MonoBehaviour:
   prefab3272: {fileID: 3799371091143696932, guid: 558fe6e16fed74033a7bc3885894498c, type: 3}
   prefab3271: {fileID: 1323104694366302712, guid: a27f4f1d526f14af388e83b4a8dca6da, type: 3}
   receiveBoxContent: {fileID: 1246321383}
-  newMessageButton4: {fileID: 1001671352}
+  newMessageButton4: {fileID: 547079213}
   sendButton: {fileID: 1170644566}
   textArea: {fileID: 891274483}
 --- !u!1 &1170644566 stripped
@@ -1748,7 +1748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00018310547}
+  m_AnchoredPosition: {x: 0, y: -0.00012207031}
   m_SizeDelta: {x: 0, y: 200}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1907220928
@@ -2011,7 +2011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1250493998507450879, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -942.7479
+      value: -1213.3628
       objectReference: {fileID: 0}
     - target: {fileID: 1563621555371550787, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_IsActive

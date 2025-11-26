@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_text
-      value: "1\uFE0F\U0001F9476324 \U0001F948castagna \U0001F949madasi"
+      value: "1\uFE0F\U0001F9476324 \U0001F948castagna"
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.size

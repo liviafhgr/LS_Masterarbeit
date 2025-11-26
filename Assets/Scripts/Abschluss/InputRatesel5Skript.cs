@@ -41,7 +41,7 @@ public class InputRatesel5Skript : MonoBehaviour
         if (inputScript != null && !string.IsNullOrWhiteSpace(inputScript.playerInput))
         {
             string eingabe = inputScript.playerInput.Trim();
-            if (eingabe == "*6324**castagna**madasi*")
+            if (eingabe == "*6324**castagna*")
             {
                 Instantiate(prefab561, receiveBoxContent);
                 // Nach 2 Sekunden Überleitung instanziieren

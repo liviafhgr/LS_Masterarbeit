@@ -56,8 +56,12 @@ public class AudioMessage : MonoBehaviour
         var playButton = buttonDictionary[buttonPrefix + "Play"];
         var pauseButton = buttonDictionary[buttonPrefix + "Pause"];
         var audio = audioSources[buttonPrefix + "Audio"];
+
         if (playButton.IsActive())
         {
+            // Neu: alle anderen Audios stoppen/pausieren
+            StopAllOtherAudios(audio);
+
             playButton.gameObject.SetActive(!playButton.gameObject.activeSelf);
             pauseButton.gameObject.SetActive(!pauseButton.gameObject.activeSelf);
             audio.Play();
@@ -68,6 +72,32 @@ public class AudioMessage : MonoBehaviour
             pauseButton.gameObject.SetActive(!pauseButton.gameObject.activeSelf);
             playButton.gameObject.SetActive(!playButton.gameObject.activeSelf);
             audio.Pause();
+        }
+    }
+
+    // Neu: Hilfsmethode – pausiert alle anderen Audios und setzt deren Buttons zurück
+    private void StopAllOtherAudios(AudioSource except)
+    {
+        foreach (var kv in audioSources)
+        {
+            var other = kv.Value;
+            if (other == null || other == except) continue;
+
+            if (other.isPlaying) other.Pause();
+
+            // Buttons zu diesem Audio zurücksetzen (Prefix = Name ohne "Audio")
+            string prefix = Regex.Replace(other.gameObject.name, @"Audio$", string.Empty);
+            if (buttonDictionary.TryGetValue(prefix + "Play", out var otherPlay))
+                otherPlay.gameObject.SetActive(true);
+            if (buttonDictionary.TryGetValue(prefix + "Pause", out var otherPause))
+                otherPause.gameObject.SetActive(false);
+
+            // ggf. laufende Coroutine beenden
+            if (audioCoroutineTracker.TryGetValue(other.gameObject.name, out var co))
+            {
+                StopCoroutine(co);
+                audioCoroutineTracker.Remove(other.gameObject.name);
+            }
         }
     }
 //Gleichh wie bei VideoMessage aber zwei Audio Clips.

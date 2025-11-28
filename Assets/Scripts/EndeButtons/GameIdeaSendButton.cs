@@ -16,6 +16,6 @@ public class OpenFHGRWebsiteButton : MonoBehaviour
 
     public void OpenWebsite()
     {
-        Application.OpenURL("https://www.fhgr.ch/fh-graubuenden/angewandte-zukunftstechnologien/institut-fuer-multimedia-production-imp/viagg-io-entdeckungsreise-in-die-sprache-und-kultur-der-italienischsprachigen-schweiz/");
+        Application.OpenURL("https://viaggio.fhgr.ch/de/");
     }
 }

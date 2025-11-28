@@ -16,6 +16,6 @@ public class OpenUrlButton : MonoBehaviour
 
     public void OpenViaggioUrl()
     {
-        Application.OpenURL("https://www.fhgr.ch/fh-graubuenden/angewandte-zukunftstechnologien/institut-fuer-multimedia-production-imp/viagg-io-entdeckungsreise-in-die-sprache-und-kultur-der-italienischsprachigen-schweiz/");
+        Application.OpenURL("https://play.unity.com/en/games/e2b52e47-f5bd-4bec-bb31-8b8622533b8a/festival-escape-rabadan-version-3");
     }
 }

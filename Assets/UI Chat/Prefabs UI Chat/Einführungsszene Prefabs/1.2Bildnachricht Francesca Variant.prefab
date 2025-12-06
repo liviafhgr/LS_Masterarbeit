@@ -65,10 +65,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Questi sono i miei appunti per la password. Spero che voi troviate la password.
-    Senza password non posso pubblicare il nuovo gioco di Viagg-io. I ragazzi della
-    Val Bregaglia conoscono bene la Svizzera italiana. Mi hanno aiutato a creare
-    il nuovo gioco.
+  m_text: "Questi sono i miei appunti per la password \U0001F511\U0001F4A9. Spero
+    che voi troviate la password\U0001F440. Senza password non posso pubblicare il
+    nuovo gioco di Viagg-io\u274C\U0001F3AE. I ragazzi della Val Bregaglia conoscono
+    bene la Svizzera italiana . Mi hanno aiutato a creare il nuovo gioco\U0001F3B2."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 37968c949e7794273b1a18a9ced79a65, type: 2}
   m_sharedMaterial: {fileID: 2289805867571313575, guid: 37968c949e7794273b1a18a9ced79a65, type: 2}
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -118.21527, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

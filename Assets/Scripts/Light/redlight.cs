@@ -10,13 +10,11 @@ public class redlight : MonoBehaviour
     private float timer = 0f;
     private bool useB = false;
 
-    // Awake is called when the script instance is being loaded
     void Awake()
     {
         if (targetLight == null) targetLight = GetComponent<Light>();
     }
 
-    // OnEnable is called when the object becomes enabled and active
     void OnEnable()
     {
         timer = 0f;
@@ -24,7 +22,6 @@ public class redlight : MonoBehaviour
         if (targetLight != null) targetLight.color = colorA;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (targetLight == null) return;

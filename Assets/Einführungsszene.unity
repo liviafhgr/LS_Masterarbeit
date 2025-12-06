@@ -2174,6 +2174,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24ac5233f40ae48ff9d976b0a8936307, type: 3}
+--- !u!1 &629093831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629093833}
+  - component: {fileID: 629093832}
+  m_Layer: 0
+  m_Name: AudioPasswort
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &629093832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629093831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e047ae25a0eae4bc7b8a96014ed16430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioPasswort
+  audioA: {fileID: 8300000, guid: af5749a8108a846e7b16c506886f610c, type: 3}
+  audioB: {fileID: 8300000, guid: 41affbb286e974a219a440da61ebe17c, type: 3}
+  playOnStart: 1
+  startDelay: 0
+--- !u!4 &629093833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629093831}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.493, z: 4.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &642772152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852755109115453855, guid: fa7c69a1758e74fe8b1d34975a861679, type: 3}
@@ -3169,7 +3217,7 @@ PrefabInstance:
       addedObject: {fileID: 401876862}
     - targetCorrespondingSourceObject: {fileID: -8700617353114198275, guid: 9997d3c22236440209f0c72d0039228c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1530797736}
+      addedObject: {fileID: 1530797739}
   m_SourcePrefab: {fileID: 100100000, guid: 9997d3c22236440209f0c72d0039228c, type: 3}
 --- !u!4 &1049169556 stripped
 Transform:
@@ -4743,7 +4791,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8700617353114198275, guid: 9997d3c22236440209f0c72d0039228c, type: 3}
   m_PrefabInstance: {fileID: 1035736717}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1530797736
+--- !u!114 &1530797739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4752,10 +4800,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1530797734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77dbcd476ab4d4bdb9cc80f4a53e3d9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 18e6b89f526be4288b4e5123ab5d2629, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::redlight
   targetLight: {fileID: 0}
+  intervalSeconds: 1
+  colorA: {r: 1, g: 0, b: 0, a: 1}
+  colorB: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1550542598 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6095772108029104657, guid: 6db54bd326d484956a2e691c578c79f2, type: 3}
@@ -6007,3 +6058,4 @@ SceneRoots:
   - {fileID: 1510558319}
   - {fileID: 814996271}
   - {fileID: 1035736717}
+  - {fileID: 629093833}

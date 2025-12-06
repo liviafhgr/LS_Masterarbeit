@@ -106,9 +106,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_text
-      value: "Das Passwort hat funktioniert, das Game ist jetzt offiziell ver\xF6ffentlicht
-        und bereits zum Download verf\xFCgbar. Ihr seid ein super Team. Die Reise
-        durchs Bergell ist geschafft. Kommt ins Gameb\xFCro Viagg-io HUB zum Feiern!"
+      value: "La password ha funzionato. Il gioco \xE8 stato pubblicato ufficialmente
+        e si pu\xF2 gi\xE0 scaricare. Siete una squadra grandiosa. Il viaggio nella
+        Val Bregaglia \xE8 terminato. Venite all\u2019ufficio di gioco Viagg-io HUB
+        per festeggiare!\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_fontColor.b

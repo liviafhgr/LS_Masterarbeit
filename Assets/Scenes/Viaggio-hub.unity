@@ -3021,7 +3021,7 @@ PrefabInstance:
     - target: {fileID: 3483491637059118814, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: 'prefabs.Array.data[10]'
       value: 
-      objectReference: {fileID: 2330157235324618000, guid: 7dbbf388dd76f41d4aac93f662c7cd1e, type: 3}
+      objectReference: {fileID: 1754820894349521374, guid: 3f961ae8ec40b448e935a8e0803c7f2b, type: 3}
     - target: {fileID: 3935393335852929119, guid: 27a3d4fab36f34c29bf927ba1f5ef7b2, type: 3}
       propertyPath: m_text
       value: "Inserisci testo\u2026"

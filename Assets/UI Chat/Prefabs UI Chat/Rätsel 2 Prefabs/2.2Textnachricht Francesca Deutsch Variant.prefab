@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1010
+      value: 537.1042
       objectReference: {fileID: 0}
     - target: {fileID: 2501315804762464846, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_SizeDelta.y
@@ -106,8 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_text
-      value: "Per prima cosa leggi la chat. \nNon iniziare a cercare le carte.\nNon
-        avviare la AR."
+      value: Palazzo Castelmur
       objectReference: {fileID: 0}
     - target: {fileID: 4573000082925304855, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_margin.z
@@ -142,8 +141,20 @@ PrefabInstance:
       value: 2.2Textnachricht Francesca Deutsch Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 841
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6072353228985301976, guid: c03512d7b595541c88cdbbcae67b13b2, type: 3}
       propertyPath: m_AnchoredPosition.y

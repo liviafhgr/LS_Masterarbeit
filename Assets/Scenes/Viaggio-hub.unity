@@ -1995,6 +1995,7 @@ GameObject:
   - component: {fileID: 1425357994}
   - component: {fileID: 1425357993}
   - component: {fileID: 1425357992}
+  - component: {fileID: 1425357995}
   m_Layer: 5
   m_Name: Button_start_webchat (1)
   m_TagString: Untagged
@@ -2066,9 +2067,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: buttonstartwebchat, Assembly-CSharp
-        m_MethodName: OnStartWebChatClicked
+      - m_Target: {fileID: 1425357995}
+        m_TargetAssemblyTypeName: OpenYouTubeLink, Assembly-CSharp
+        m_MethodName: OpenInNewTab
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2116,6 +2117,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425357990}
   m_CullTransparentMesh: 1
+--- !u!114 &1425357995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425357990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 928083b7005b1490781e6217d30c07be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OpenYouTubeLink
+  url: https://youtu.be/Hy9jnzyjn7w
 --- !u!1 &1482649504
 GameObject:
   m_ObjectHideFlags: 0

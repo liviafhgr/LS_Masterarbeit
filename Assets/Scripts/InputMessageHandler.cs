@@ -25,11 +25,9 @@ public class InputMessageHandler : MonoBehaviour
     {
         Debug.Log("SaveAndDisplayInput wurde aufgerufen.");
 
-        // Hole den Text aus der playerInput-Variable des ChatInputHandler-Skripts
-        string playerInput = "    " + chatInputHandler.playerInput; // Füge 4 Leerzeichen am Anfang hinzu
+        string playerInput = "    " + chatInputHandler.playerInput;
         Debug.Log($"Player Input: {playerInput}");
 
-        // Überprüfe, ob das Prefab und das Ziel korrekt zugewiesen sind
         if (sendContentPrefab == null)
         {
             Debug.LogError("SendContentPrefab ist nicht zugewiesen!");
@@ -42,40 +40,63 @@ public class InputMessageHandler : MonoBehaviour
             return;
         }
 
-        // Klone das SendContentPrefab
-        GameObject clonedPrefab = Instantiate(sendContentPrefab, receiveContent);
+        // Instantiate und lokale Transform beibehalten
+        GameObject clonedPrefab = Instantiate(sendContentPrefab, receiveContent, false);
         Debug.Log("SendContentPrefab wurde erfolgreich geklont.");
 
-        // Setze den Text des geklonten Prefabs
+        // Text setzen
         TextMeshProUGUI prefabText = clonedPrefab.GetComponentInChildren<TextMeshProUGUI>();
-        if (prefabText != null)
+        if (prefabText == null)
         {
-            prefabText.text = playerInput;
-            Debug.Log($"Text im geklonten Prefab gesetzt: {playerInput}");
+            Debug.LogError("Kein TextMeshPro-Element im Prefab gefunden!");
+            return;
+        }
 
-            // Setze die Breite des Elternobjekts "Eingabenachricht" basierend auf der Textlänge
-            RectTransform parentRectTransform = prefabText.transform.parent.GetComponent<RectTransform>();
-            if (parentRectTransform != null)
-            {
-                // Hole die bevorzugte Breite des Textes
-                float preferredWidth = prefabText.preferredWidth;
+        prefabText.text = playerInput;
+        Debug.Log($"Text im geklonten Prefab gesetzt: {playerInput}");
 
-                // Füge 10 Pixel (5 mm auf jeder Seite) zur Breite hinzu
-                float adjustedWidth = preferredWidth + 10;
+        // Eltern-RectTransform (z.B. die Nachrichten-Blase) anpassen
+        RectTransform parentRect = prefabText.transform.parent as RectTransform;
+        if (parentRect == null)
+        {
+            Debug.LogError("Kein RectTransform für das Elternobjekt gefunden!");
+            return;
+        }
 
-                // Setze die Breite des Elternobjekts (z. B. "Eingabenachricht")
-                parentRectTransform.sizeDelta = new Vector2(adjustedWidth, parentRectTransform.sizeDelta.y);
+        // berechnete Breite holen (TMP muss erst updaten)
+        Canvas.ForceUpdateCanvases();
+        float preferredWidth = prefabText.preferredWidth;
+        float adjustedWidth = preferredWidth + 10f;
 
-                Debug.Log($"Breite von 'Eingabenachricht' angepasst: {adjustedWidth}");
-            }
-            else
-            {
-                Debug.LogError("Kein RectTransform für das Elternobjekt gefunden!");
-            }
+        // Falls LayoutElement vorhanden: preferredWidth setzen (arbeitet besser mit LayoutGroup)
+        var layoutElement = parentRect.GetComponent<LayoutElement>();
+        if (layoutElement != null)
+        {
+            layoutElement.preferredWidth = adjustedWidth;
         }
         else
         {
-            Debug.LogError("Kein TextMeshPro-Element im Prefab gefunden!");
+            parentRect.sizeDelta = new Vector2(adjustedWidth, parentRect.sizeDelta.y);
         }
+
+        // Erzwinge rechtsbündige Anchors/Pivot (falls Prefab nicht korrekt eingestellt ist)
+        RectTransform clonedRect = clonedPrefab.GetComponent<RectTransform>();
+        if (clonedRect != null)
+        {
+            clonedRect.anchorMin = new Vector2(1f, clonedRect.anchorMin.y);
+            clonedRect.anchorMax = new Vector2(1f, clonedRect.anchorMax.y);
+            clonedRect.pivot = new Vector2(1f, clonedRect.pivot.y);
+            clonedRect.anchoredPosition = new Vector2(-10f, clonedRect.anchoredPosition.y); // rechter Abstand
+        }
+
+        // Layout sofort komplett neu berechnen, damit Position korrekt ist
+        var contentRect = receiveContent as RectTransform;
+        if (contentRect != null)
+        {
+            Canvas.ForceUpdateCanvases();
+            LayoutRebuilder.ForceRebuildLayoutImmediate(contentRect);
+        }
+
+        Debug.Log($"Breite von 'Eingabenachricht' angepasst: {adjustedWidth}");
     }
 }

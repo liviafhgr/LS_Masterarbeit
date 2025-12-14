@@ -20,10 +20,12 @@ public class InputRaetsel3Skript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && hasStarted)
+        // KORREKT: Starte die Prüfung nur, wenn Return gedrückt UND noch keine Prüfung läuft
+        if (Input.GetKeyDown(KeyCode.Return) && !hasStarted)
         {
-            StartCoroutine(CheckInputNextFrame());
+            Debug.Log("InputRaetsel3Skript: Return gedrückt, starte Prüfung.");
             hasStarted = true;
+            StartCoroutine(CheckInputNextFrame());
         }
     }
 

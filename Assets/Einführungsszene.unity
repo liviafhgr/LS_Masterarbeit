@@ -634,6 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f46327e8d66743d587d7c09f5f08af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  sceneName: Viaggio-hub
 --- !u!4 &89815780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8132939956772425489, guid: 4feb22811f32544fbac568c12bbcd471, type: 3}

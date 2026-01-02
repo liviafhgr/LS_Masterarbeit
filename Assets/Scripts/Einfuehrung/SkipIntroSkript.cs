@@ -1,16 +1,29 @@
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SkipIntroSkript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField]
+    private string sceneName = "viagg-io hub";
+
+    private Button button;
+
+    void Awake()
     {
-        
+        button = GetComponent<Button>();
+        if (button != null)
+            button.onClick.AddListener(OpenScene);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OpenScene()
     {
-        
+        SceneManager.LoadScene(sceneName);
+    }
+
+    void OnDestroy()
+    {
+        if (button != null)
+            button.onClick.RemoveListener(OpenScene);
     }
 }
